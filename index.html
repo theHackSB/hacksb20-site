@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="keywords" content="HackSB, theHackSB, South Brunswick Hackathon, Hackathon South Brunswick" />
-    <meta name="description" content="Hack SB - 12 hour hackathon for highschool students at the South Brunswick Public Library on April 4th 2020 - April 5th 2020" />
-    <meta name="subject" content="Hack SB - 12 hour hackathon for highschool students">
+    <meta name="description" content="Hack SB - 24 hour hackathon for highschool students at the South Brunswick Highschool April 4th 2020 - April 5th" />
+    <meta name="subject" content="Hack SB - 24 hour hackathon for highschool students">
     <meta name="copyright" content="theHackSB">
     <meta name="robots" content="index,follow" />
     <meta name="topic" content="Hack SB Hackathon">
-    <meta name="summary" content="Hack SB - 12 hour hackathon for highschool students at the South Brunswick Public Library">
+    <meta name="summary" content="Hack SB - 24 hour hackathon for highschool students at the South Brunswick Highschool">
     <meta name="author" content="theHackSB, team@hacksb.org">
     <meta name="copyright" content="HackSB">
     <meta name="reply-to" content="team@hacksb.org">
@@ -21,7 +21,7 @@
     <meta name="og:type" content="website" />
     <meta name="og:image" content="media/logo.png" />
     <meta name="og:site_name" content="Hack SB" />
-    <meta name="og:description" content="Hack SB - 12 hour hackathon for highschool students at the South Brunswick Public Library" />
+    <meta name="og:description" content="Hack SB - 24 hour hackathon for highschool students at the South Brunswick Highschool" />
     <meta name="og:email" content="team@hacksb.org" />
     <meta name="og:country-name" content="USA" />
     <link rel="shortcut icon" type="image/png" href="media/favicon.ico" />
@@ -196,7 +196,7 @@
             <br>
             <h1 class="title is-1">About</h1>
             <h1 class="title is-3">What is Hack SB?</h1>
-            <span>Hack SB is a 12 hour student organized hackathon for high school students.</span>
+            <span>Hack SB is a 24 hour student organized hackathon for high school students.</span>
             <br>
             <br>
             <h1 class="title is-3">What is a Hackathon?</h1>
@@ -439,7 +439,11 @@
 </body>
 <script src="https://www.gstatic.com/firebasejs/5.7.2/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/5.7.2/firebase-database.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@10.19.0/dist/lazyload.min.js"></script>
 <script>
+    let myLazyLoad = new LazyLoad({
+        elements_selector: ".lazy"
+    });
     const config = {
         apiKey: "AIzaSyArFWjDB_RY6JzTLOkCLROvpSbpeqoCnrw",
         authDomain: "hacksbreg.firebaseapp.com",
@@ -449,12 +453,6 @@
         messagingSenderId: "1064689868252"
     };
     firebase.initializeApp(config);
-</script>
-<script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@10.19.0/dist/lazyload.min.js"></script>
-<script>
-    let myLazyLoad = new LazyLoad({
-        elements_selector: ".lazy"
-    });
 </script>
 <script src="scripts/smooth-scroll.polyfills.min.js"></script>
 <script src="scripts/lil-query.min.js"></script>
