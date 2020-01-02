@@ -330,3 +330,7 @@ td{
 .button{
     border: none !important
 }
+#navbarBasicExample{
+	background:black;
+	color: white;
+}
