@@ -9,7 +9,7 @@
     font-family: 'Product Sans' !important;
 }
 * ::selection{
-    background-color: #1a98ff;
+    background-color: #FF8119;
     color: white;
 }
 body{
@@ -17,9 +17,15 @@ body{
     background-color: #333;
 }
 .theme-color{
-    background-color: #1A98FF !important;
+    background-color: #F56819 !important;
 }
 .navbar-item{
+    color: white;
+}
+a{
+    color: #FF8119;
+}
+a:hover{
     color: white;
 }
 .txtShadow{
@@ -224,7 +230,7 @@ color:#818181;
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 .carousel .title{
-    background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(26, 156, 255, 0.877)) !important;
+    background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(245, 104, 24, 0.877)) !important;
 }
 .carousel .carousel-container .carousel-item .title{
 background: rgba(255,255,255,.1);
@@ -252,7 +258,7 @@ border-bottom-left-radius: 10px !important;
    background-repeat: no-repeat;
    background-size: cover;
 }
-.navbar{
+#navbarBasicExample{
     background: rgba(255, 255, 255, 0.0) !important;
 }
 footer .fab, footer .fas{
