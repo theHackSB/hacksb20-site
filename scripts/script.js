@@ -38,6 +38,7 @@ const submit = () => {
         otherSchool = id('otherSchool').value,
         VegOrNon = id('veg').value,
         notes = id('notes').value,
+        phone = id('phone').value,
         finalSchool;
     if (school === 'South Brunswick High School') {
         finalSchool = school;
@@ -53,6 +54,7 @@ const submit = () => {
         school: finalSchool,
         veg: VegOrNon,
         notes: notes,
+        phone: phone
         // came: "yes"
     }).then(ref => {
         console.log('Added doc to database with doc id: ', ref.id);
@@ -66,6 +68,7 @@ const submit = () => {
             school: finalSchool,
             veg: VegOrNon,
             notes: notes,
+            phone: phone
         };
         let convert = key => {
             switch (key) {
