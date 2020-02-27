@@ -30,6 +30,13 @@ window.setInterval(function() {
     }
 }, 1000);
 const submit = () => {
+    console.log("HISDHFOIDSLHFJDSKFHKJ");
+    console.log(!id('code_of_conduct').checked || ! id('privacy').checked);
+    if(!id('code_of_conduct').checked || ! id('privacy').checked) {
+        snackbar("Please agree to the MLH Code of Conduct and Privacy Policy", 3000);
+        console.log("hsjkdfhkjsd");
+        return;
+    }
     let firstName = id('firstName').value,
         lastName = id('lastName').value,
         email = id('email').value,
@@ -45,7 +52,7 @@ const submit = () => {
     } else {
         finalSchool = otherSchool;
     }
-
+    console.log("hi");
     db.ref(`registrations/${(new Date()).getFullYear()}`).push({
         first: firstName,
         last: lastName,
@@ -84,6 +91,8 @@ const submit = () => {
                     return "School";
                 case "veg":
                     return "Vegatarian Status";
+                case "phone":
+                    return "Phone Number";
                 case "notes":
                     "";
             }
@@ -99,7 +108,7 @@ const submit = () => {
     });
 }
 let toggleModal = () => {
-    //snackbar('Sorry, Signups didn')
+    //snackbar('Sorry, Signups didn');
     let ele = id('signup-modal');
     ele.classList.toggle("is-active");
 }
