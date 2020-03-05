@@ -347,3 +347,14 @@ td{
 	background:black;
 	color: white;
 }
+BlueCaf{
+    color: blue !important;
+}
+BlueCaf::after{
+    content: 'Blue Cafeteria';
+}
+RedCaf{
+    color: red !important;
+}
+RedCaf::after{
+    content: 'Red Cafeteria';
