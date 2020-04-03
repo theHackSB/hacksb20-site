@@ -112,7 +112,7 @@ let toggleModal = () => {
     let ele = id('signup-modal');
     ele.classList.toggle("is-active");
 }
-
+// LINE#2 zscqizmyqewvltjswkoepislhrgayz
 window.onscroll = function() {
     document.getElementsByClassName('navbar')[0].style.background = '';
 }
