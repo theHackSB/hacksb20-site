@@ -17,3 +17,5 @@ Instead of minifying out code using webpack or parcel which would require a diff
 
 # Backend
 We believe in the serverless ideology, therefore we used firebase realtime database to store the user information. We used firebase cloud functions to secure our database to restrict unwanted reads and writes to the DB. Using React js we were able to create a visualization of the data.
+
+.<sub><sub>#6 ynoywkztcdifmtjoyjhlnvsnlrekwv</sub></sub>
